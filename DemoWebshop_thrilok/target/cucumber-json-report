@@ -1,0 +1,369 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Taking screenshot of order details in myorders",
+        "description": "",
+        "id": "demowebshop-website;taking-screenshot-of-order-details-in-myorders",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 73678802300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I logged into website",
+            "match": {
+              "location": "MyOrders.i_logged_into_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1300006200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigate to My orders page",
+            "match": {
+              "location": "MyOrders.i_navigate_to_My_orders_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2076247000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on order details",
+            "match": {
+              "location": "MyOrders.i_click_on_order_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 979967600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "order details will be displayed and captured",
+            "match": {
+              "location": "MyOrders.order_details_will_be_displayed_and_captured()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@tc_01_My_orders"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Changing city and pincode in shipping address",
+        "description": "",
+        "id": "demowebshop-website;changing-city-and-pincode-in-shipping-address",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 58965680100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I logged in to DemoWebshop website",
+            "match": {
+              "location": "EditAddress.i_logged_in_to_DemoWebshop_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1368065200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I navigate to My_account page",
+            "match": {
+              "location": "EditAddress.i_navigate_to_My_account_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3596312700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click edit address",
+            "match": {
+              "location": "EditAddress.i_click_add_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1014762500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter the city and pincode",
+            "match": {
+              "location": "EditAddress.i_enter_all_the_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1382084100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click submit button",
+            "match": {
+              "location": "EditAddress.i_click_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 407638300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "updated address is displayed",
+            "match": {
+              "location": "EditAddress.newly_added_address_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@tc_02_Edit_address"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "To review an item in demoshop website",
+        "description": "",
+        "id": "demowebshop-website;to-review-an-item-in-demoshop-website",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20799820600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I logged in to the website",
+            "match": {
+              "location": "Review.i_logged_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6926127400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click on an item from the list",
+            "match": {
+              "location": "Review.i_click_on_an_item_from_the_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1955226100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click on write a review option",
+            "match": {
+              "location": "Review.i_click_on_write_a_review_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2106819200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I enter the message",
+            "match": {
+              "location": "Review.i_enter_the_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2383362600,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on submit",
+            "match": {
+              "location": "Review.i_click_on_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 391148900,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I will eceive feedback stating review is succesfully added message",
+            "match": {
+              "location": "Review.i_will_eceive_feedback_stating_review_is_succesfully_added_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@tc_03_Review_an_item"
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "name": "Changing password of logged in profile",
+        "description": "",
+        "id": "demowebshop-website;changing-password-of-logged-in-profile;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 48701198000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I logged in to website",
+            "match": {
+              "location": "ChangePwd.i_logged_in_to_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6674826300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I navigate to My account page",
+            "match": {
+              "location": "ChangePwd.i_navigate_to_My_account_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 846308800,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I click change password",
+            "match": {
+              "location": "ChangePwd.i_click_change_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1998745400,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I enter \"demo123\" \"demo123\" \"demo123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo123",
+                  "offset": 9
+                },
+                {
+                  "val": "demo123",
+                  "offset": 19
+                },
+                {
+                  "val": "demo123",
+                  "offset": 29
+                }
+              ],
+              "location": "ChangePwd.i_enter(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 972995400,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I click submit",
+            "match": {
+              "location": "ChangePwd.i_click_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 460786500,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Password succesfully changed message is displayed",
+            "match": {
+              "location": "ChangePwd.password_succesfully_changed_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 33,
+            "name": "@tc_04_Change_Password"
+          },
+          {
+            "line": 1,
+            "name": "@DemoWebshop"
+          }
+        ]
+      }
+    ],
+    "name": "DemoWebshop Website",
+    "description": "",
+    "id": "demowebshop-website",
+    "keyword": "Feature",
+    "uri": "DemoWebshop.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DemoWebshop"
+      }
+    ]
+  }
+]

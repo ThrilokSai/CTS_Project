@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="156.373548">
+<testcase classname="DemoWebshop Website" name="Taking screenshot of order details in myorders" time="58.131554">
+<system-out><![CDATA[Given I logged into website.................................................passed
+When I navigate to My orders page...........................................passed
+And I click on order details................................................passed
+Then order details will be displayed and captured...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="DemoWebshop Website" name="Changing city and pincode in shipping address" time="30.90892">
+<system-out><![CDATA[Given I logged in to DemoWebshop website....................................passed
+When I navigate to My_account page..........................................passed
+And I click edit address....................................................passed
+Then I enter the city and pincode...........................................passed
+And I click submit button...................................................passed
+Then updated address is displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="DemoWebshop Website" name="To review an item in demoshop website" time="37.310305">
+<system-out><![CDATA[Given I logged in to the website............................................passed
+When I click on an item from the list.......................................passed
+And I click on write a review option........................................passed
+Then I enter the message....................................................passed
+And I click on submit.......................................................passed
+Then I will eceive feedback stating review is succesfully added message.....passed
+]]></system-out>
+</testcase>
+<testcase classname="DemoWebshop Website" name="Changing password of logged in profile" time="30.022769">
+<system-out><![CDATA[Given I logged in to website................................................passed
+When I navigate to My account page..........................................passed
+And I click change password.................................................passed
+Then I enter "demo123" "demo123" "demo123"..................................passed
+And I click submit..........................................................passed
+Then Password succesfully changed message is displayed......................passed
+]]></system-out>
+</testcase>
+</testsuite>
