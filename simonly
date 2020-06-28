@@ -1,0 +1,84 @@
+package test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Simonly {
+	public static void main(String[] args) throws InterruptedException {
+		
+	
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\thril\\Downloads\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	driver.get("https://uat-mobile.woolworths.com.au/");
+	driver.manage().window().maximize();
+	
+	//driver.findElement(By.xpath("//a[@class='ww-product-mega-menu-anchor  menu-anchor-title']"));
+	driver.findElement(By.linkText("Plans")).click();
+	Thread.sleep(11855);
+	driver.findElement(By.xpath("//input[@id='sim-only-plan']")).click();
+	Thread.sleep(1855);
+	driver.findElement(By.linkText("Buy Now")).click();
+	Thread.sleep(1855);
+	driver.findElement(By.xpath("//input[@id='criticalInfo']")).click();
+	driver.findElement(By.xpath("//input[@id='privacy']")).click();
+	
+	driver.findElement(By.xpath("//button[@id='confirmOrder']")).click();
+	//driver.get("https://uat-mobile.woolworths.com.au/login/checkout");
+	Thread.sleep(1555);
+	driver.findElement(By.id("email")).sendKeys("thriloktest10@mailinator.com");
+	driver.findElement(By.id("checkEmail")).sendKeys("thriloktest10@mailinator.com");
+	driver.findElement(By.xpath("//button[@id='continueUserButton']")).click();
+	Thread.sleep(1855);
+	Select s= new Select(driver.findElement(By.xpath("//*[@id=\"register.title\"]")));
+	s.selectByValue("Ms");
+	driver.findElement(By.xpath("//*[@id=\"register.firstName\"]")).sendKeys("Elizabeth");
+	driver.findElement(By.xpath("//*[@id=\"register.lastName\"]")).sendKeys("Noti");
+	Select day= new Select(driver.findElement(By.xpath("//*[@id=\"daySelect\"]")));
+	day.selectByValue("7");
+	Select month= new Select(driver.findElement(By.xpath("//*[@id=\"monthSelect\"]")));
+	month.selectByValue("03");
+	Select year= new Select(driver.findElement(By.xpath("//*[@id=\"yearSelect\"]")));
+	year.selectByValue("1942");
+	
+	
+	driver.findElement(By.xpath("//*[@id=\"register.contactNumber\"]")).sendKeys("61400000000");
+	driver.findElement(By.xpath("//*[@id=\"register-homeAddress\"]")).sendKeys("25 yu");
+	Thread.sleep(1855);
+	String s1= Keys.chord( Keys.ARROW_DOWN, Keys.ENTER);
+
+	driver.findElement(By.xpath("//*[@id=\"register-homeAddress\"]")).sendKeys(s1);
+//	
+	
+	//driver.findElement(By.xpath("//*[@id=\"emailId\"]")).sendKeys("thriloktest6@mailinator.com");
+	//driver.findElement(By.xpath("//*[@id=\"checkEmail\"]")).sendKeys("thriloktest6@mailinator.com");
+	Select id= new Select(driver.findElement(By.xpath("//*[@id=\"register.identificationFormCode\"]")));
+	id.selectByValue("driversLicense");
+	driver.findElement(By.id("register_dl")).click();
+	Select state= new Select(driver.findElement(By.xpath("//*[@id=\"register.state\"]")));
+	state.selectByValue("NSW");
+	driver.findElement(By.id("register.licenseNumber")).sendKeys("7031EN");
+	
+	driver.findElement(By.xpath("//*[@id=\"continueOnClick\"]")).click();
+	Thread.sleep(1855);
+	//driver.switchTo().frame("ve-storage-iframe");
+	driver.findElement(By.id("register-privacyAct")).click();
+	driver.findElement(By.xpath("//*[@id=\"register-idCheckConsent\"]")).click();
+	driver.findElement(By.id("continueCreditCheckButton")).click();
+	Thread.sleep(1557);
+	driver.findElement(By.id("sameDelivery")).click();
+	Thread.sleep(1557);
+	Select network= new Select(driver.findElement(By.xpath("//*[@id=\"postpaidProvider\"]")));
+	network.selectByVisibleText("Telstra");
+	driver.findElement(By.id("postpaidMobileNumber")).sendKeys("123456789");
+	driver.findElement(By.id("accountNumber")).sendKeys("1114");
+	driver.findElement(By.id("portInTermsAndConditions")).click();
+	driver.findElement(By.id("portInAdvice")).click();
+	driver.findElement(By.id("btnSubmit")).click();
+	
+	
+	
+	}
+}
